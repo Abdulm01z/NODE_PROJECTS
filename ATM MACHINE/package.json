@@ -1,0 +1,19 @@
+{
+  "name": "am0-atm-machine",
+  "version": "1.0.0",
+  "description": "ATM Machine With nodejs typescript and inquirer",
+  "main": "index.js",
+  "bin": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abdul-Moiz",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.2.17"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}
