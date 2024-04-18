@@ -7,7 +7,7 @@ console.log(welcomeMessage);
 
 let myBalance = 10000;
 
-let myPin = 6649;
+let myPin = 1234;
 
 let pinAnswer = await inquirer.prompt({
   name: "pin",
@@ -37,7 +37,7 @@ if (pinAnswer.pin === myPin) {
     ]);
     if (amountAns.amount <= myBalance) {
       let balance = myBalance - amountAns.amount;
-      console.log(`The remainig balance is ${balance}`);
+      console.log(`The remainig balance is $ ${balance}`);
     } else {
       console.log(`You have insufficint balance`);
     }
@@ -54,12 +54,12 @@ if (pinAnswer.pin === myPin) {
 
     if (fastcashAns.amount <= myBalance) {
       let balance2 = myBalance - fastcashAns.amount;
-      console.log(`the remaining balance is ${balance2}`);
+      console.log(`the remaining balance is $ ${balance2}`);
     } else {
       console.log(`You have insufficient amount`);
     }
   } else if (operationAns.operation === "check balance") {
-    console.log(myBalance);
+    console.log(`$ ${myBalance}`);
   }
 } else {
   console.log("Your pin is incorrect ");

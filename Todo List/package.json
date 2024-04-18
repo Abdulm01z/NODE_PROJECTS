@@ -1,6 +1,6 @@
 {
   "name": "am1-todo-list",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Tdo list Project With Typescript NodeJs & Inquirer",
   "main": "index.js",
   "bin": "index.js",

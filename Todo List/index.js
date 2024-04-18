@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
-let welcomemessage = `\n\t ▼△▼△ 𝚆𝚎𝚕𝚌𝚘𝚖𝚎 𝚃𝚘 𝙼𝚢 𝚃𝚘𝚍𝚘 𝙻𝚒𝚜𝚝 𝙿𝚛𝚘𝚓𝚎𝚌𝚝 ▼△▼△ \t\n`;
+let welcomemessage = `\n\t ▁ ▂ ▃ ▅ ▆ ▇ █ Welcome To MY Todo List Project  █ ▇ ▆ ▅ ▃ ▂ ▁ \t\n`;
 console.log(chalk.blue(welcomemessage));
 let todos = [];
 let docontinue = true;
@@ -31,17 +31,17 @@ async function createTodo(todos) {
             });
             let addTodo = await inquirer.prompt({
                 type: "input",
-                message: "Add items in the list",
+                message: "Add items in list",
                 name: "todo",
             });
             let newTodo = todos.filter((val) => val !== updateTodo.todo);
-            todos = [...newTodo];
+            todos = [...newTodo, addTodo.todo];
             console.log(todos);
         }
         if (ans.select == "View") {
-            console.log(chalk.red(`\n\t         ❚█══ 𝕋𝕕𝕠 𝕃𝕚𝕤𝕥 ══█❚\t\n`));
+            console.log(chalk.red(`\n\t  ▁ ▂ ▃ ▅ ▆ ▇ █  Todo List   █ ▇ ▆ ▅ ▃ ▂ ▁ \t\n`));
             console.log(todos);
-            console.log(chalk.red(`\n\t❚█══ *************************** ══█❚\t\n`));
+            console.log(chalk.red(`\n\t ˜”°•✩•°”˜ ------------------------ ˜”°•✩•°”˜ \t\n`));
         }
         if (ans.select == "Delete") {
             let deleteTodo = await inquirer.prompt({
