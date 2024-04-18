@@ -47,14 +47,14 @@ if (pinAnswer.pin === myPin) {
         ]);
         if (fastcashAns.amount <= myBalance) {
             let balance2 = myBalance - fastcashAns.amount;
-            console.log(`the remaining balance is $ ${balance2}`);
+            console.log(`the remaining balance is $${balance2}`);
         }
         else {
             console.log(`You have insufficient amount`);
         }
     }
     else if (operationAns.operation === "check balance") {
-        console.log(`$ ${myBalance}`);
+        console.log(`$${myBalance}`);
     }
 }
 else {
