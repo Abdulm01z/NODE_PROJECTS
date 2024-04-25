@@ -130,7 +130,7 @@ while (doContinue) {
     },
   };
 
-  // PROMT USER FOR INPUT-
+  // PROMTPT USER FOR INPUT-
 
   const answer: {
     from:
