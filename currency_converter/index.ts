@@ -218,4 +218,4 @@ while (doContinue) {
     message: chalk.redBright("Do you want to Continue"),
   });
   doContinue = reStart.continue;
-}
+};
